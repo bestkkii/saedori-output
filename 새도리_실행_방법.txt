@@ -1,0 +1,23 @@
+1. mongodb 설정
+- MongoDB atlas에서 Database 생성
+- URI를 사용하여 MongoDB에 연결
+* 이번 프로젝트에 사용한 URI
+    mongodb+srv://saedori:toehfldhkrhdwnsla@saedori-org.7alxffm.mongodb.net/?retryWrites=true&w=majority&appName=saedori-org
+============================
+2. 크롤링 서버 설정
+// install python 3.12
+cd saedori-crawling-server
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+============================
+3. api 서버 설정
+// install golang (v.1.24.2)
+cd saedori-api-server
+cd cmd
+cd go run .
+============================
+4. Dash 서버 설정
+// install python 3.12
+cd saedori-dash
+pip install -r requirements.txt
+python app.py
